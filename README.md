@@ -1,68 +1,110 @@
-# HR-ANALYTICS
-# HR Analytics Dashboard
+# 📊 Data Analytics Dashboards
 
-## Overview
+This repository contains two interactive and insightful dashboards focused on real-world business use cases — **HR Analytics** and **Retail Performance & Profitability Analysis**. Both dashboards leverage powerful data visualization tools and provide stakeholders with actionable insights to make data-driven decisions.
 
-This repository contains the HR Analytics Dashboard, a powerful tool designed to provide comprehensive insights into various aspects of human resources data within an organization. The dashboard visualizes key HR metrics, enabling stakeholders to make data-driven decisions related to workforce management, employee satisfaction, compensation, and attrition.
+---
 
-## Key Features
+## 🧑‍💼 HR Analytics Dashboard
 
-The dashboard is built to offer a quick and insightful glance into:
+A comprehensive dashboard built to provide deep insights into an organization’s HR data. It visualizes key human resources metrics, including workforce composition, employee well-being, compensation, and attrition trends.
 
-* **Work-Life Balance Ratings:** Understand employee sentiment regarding work-life balance.
-* **Job Role Distribution:** Visualize the proportional representation of different job roles within the organization.
-* **Monthly Income by Job Role:** Compare income levels across various job functions.
-* **Overall Attrition Rate:** Monitor employee turnover and retention.
-* **Employee Demographics:** Gain insights into total job levels, education levels, job satisfaction, and monthly income across the organization.
-* **Interactive Filters:** Analyze attrition by age range and job level for deeper insights.
+### 🔍 Key Features
 
-## Dashboard Sections & Metrics
+- **Work-Life Balance Ratings**: Analyze how employees perceive their work-life balance.
+- **Job Role Distribution**: Visual overview of the spread of job roles within the company.
+- **Monthly Income by Job Role**: Compare compensation across departments.
+- **Attrition Analysis**: Monitor turnover rate and identify high-risk groups.
+- **Employee Demographics**: Get an overview of job levels, education, satisfaction, and income.
+- **Interactive Filters**: Drill down into attrition by age range and job level.
 
-The dashboard is logically divided into several sections, each focusing on a critical HR area:
+### 📊 Dashboard Sections & Metrics
 
-### Top-Level Key Performance Indicators (KPIs)
+#### 🔝 Top-Level KPIs
+- **Sum of Job Level**
+- **Sum of Education**
+- **Sum of Job Satisfaction**
+- **Sum of Monthly Income**
 
-* **Sum of Job Level:** Aggregate measure of job levels across the workforce.
-* **Sum of Education:** Cumulative measure of educational attainment of employees.
-* **Sum of Job Satisfaction:** Overall employee satisfaction score.
-* **Sum of Monthly Income:** Total monthly compensation disbursed to employees.
+#### 😊 Employee Well-being
+- **Donut Chart – Work-Life Balance Ratings**  
+  Majority of employees (60.41%) report a rating of ‘3’, suggesting a balanced work-life environment.
 
-### Employee Well-being
+#### 👥 Workforce Demographics & Compensation
+- **Bar + Line Chart – Employees & Income by Job Level**  
+  Job Level '2' has the highest headcount and income share.
+- **Treemap – Job Role Distribution**  
+  Most common roles: Sales Executive and Research Scientist.
+- **Bar Chart – Monthly Income by Role**  
+  Sales Executives earn the most, followed by Managers and Manufacturing Directors.
 
-* **Work-Life Balance Ratings:** A donut chart showing the distribution of work-life balance scores (e.g., 1, 2, 3, 4, 5). A significant portion of employees report a balance rating of '3' (60.41%), indicating a generally healthy work-life environment.
+#### 📉 Attrition Analysis
+- **Pie Chart – Overall Attrition Rate**  
+  16.12% of employees have left the organization.
+- **Filters**:  
+  - Attrition (Yes/No)  
+  - Age Range (18–60)  
+  - Job Level (1–5)
 
-### Workforce Demographics & Compensation
+### 🧭 How to Use
 
-* **Sum of Employee Number and Sum of Monthly Income by Job Level:** A combined bar and line chart illustrating the number of employees and their aggregate monthly income across different job levels. Job Level '2' shows the highest employee count and total monthly income.
-* **Job Role Distribution:** A treemap visualization displaying the proportion of employees in various job roles. "Sales Executive" and "Research Scientist" appear to be the most prevalent roles.
-* **Monthly Income by Job Role:** A bar chart comparing the sum of monthly income for different job roles. "Sales Executive" demonstrates the highest monthly income, followed by "Manager" and "Manufacturing Director".
+- Interact with charts and filters for detailed insights.
+- Use the Age and Job Level sliders to refine attrition analysis.
+- Toggle Attrition filter to compare current vs. exited employees.
 
-### Attrition Analysis
+### 🔐 Data Source
 
-* **Overall Attrition Rate:** A pie chart showing the percentage of employees who have attrited versus those who have not. The dashboard indicates an attrition rate of 16.12%.
-* **Attrition Filters:** Interactive sliders and checkboxes to drill down into attrition data:
-    * **Attrition (Yes/No):** Filter to view only attrited or non-attrited employees.
-    * **Age Range (18-60):** Analyze attrition trends across different age groups.
-    * **Job Level (1-5):** Investigate attrition rates for specific job levels.
+Confidential HR database (internal use only).
 
-## How to Use
+### 🚀 Future Enhancements
 
-This dashboard is designed for easy navigation and understanding. Simply interact with the visuals and filters to explore the HR data.
+- Real-time data integration
+- Historical trends and forecasting
+- Department/location-level drilldowns
+- Predictive attrition modeling
 
-* Click on different segments of charts to see highlighted data.
-* Use the "Age" and "Job Level" sliders in the Attrition section to narrow down your analysis.
-* Toggle the "Attrition" checkbox to focus on employees who have left the organization.
+---
 
-## Data Source
+## 🛍️ Retail Business Performance & Profitability Analysis
 
-The data underpinning this dashboard is sourced from internal HR databases (specific source details are omitted for confidentiality).
+An end-to-end project analyzing online retail transactional data to uncover trends in revenue, returns, customer behavior, and product profitability.
 
-## Future Enhancements
+### 📈 Project Highlights
 
-* Integration with live HR data feeds for real-time analytics.
-* Addition of historical trend analysis for key metrics.
-* Further drill-down capabilities for specific departments or locations.
-* Predictive analytics for potential attrition risk.
+- Cleaned and transformed a raw dataset using Python and Pandas.
+- Developed an interactive Power BI dashboard to explore revenue, returns, product trends, and geography-based performance.
+- Delivered insights to guide inventory optimization and marketing focus.
+
+### 📁 Dataset Overview
+
+- **Source**: Online Retail Dataset
+- **Size**: ~500,000 records
+- **Key Columns**: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
+- **Cleaned Output**: `cleaned_retail_data.csv`
+
+### 🛠️ Tools & Technologies
+
+| Tool       | Purpose                            |
+|------------|------------------------------------|
+| Python     | Data cleaning, transformation      |
+| Pandas     | Data analysis                      |
+| Power BI   | Dashboard design and visualization |
+| DAX        | Calculated columns & KPIs          |
+
+### 📊 Power BI Dashboard Visuals
+
+- **Line Chart** – Monthly Revenue Trend
+- **Bar Chart** – Top 10 Most Profitable Products
+- **Map** – Country-wise Revenue Distribution
+- **Bar Chart** – Most Returned Products
+- **Stacked Column Chart** – Sales vs. Returns Over Time
+- **KPI Cards** – Total Revenue, Returns, Net Profit
+- **Slicers** – Filter by Country, Month, Return Status
+
+### 📄 Deliverables
+
+- ✅ Cleaned dataset
+- ✅ Power BI dashboard
+- ✅ Summary report with insights
 
 ---
 
